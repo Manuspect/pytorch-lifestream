@@ -2,7 +2,7 @@ import numpy as np
 import torch
 import logging
 
-from ptls.data_load import IterableProcessingDataset
+from lifestream.ptls.data_load import IterableProcessingDataset
 
 logger = logging.getLogger(__name__)
 

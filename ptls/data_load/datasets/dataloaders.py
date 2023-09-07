@@ -2,9 +2,9 @@ from typing import List, Dict
 
 from torch.utils.data import DataLoader
 
-from ptls.data_load import IterableChain, padded_collate_wo_target
-from ptls.data_load.filter_dataset import FilterDataset
-from ptls.data_load.iterable_processing import ToTorch, FilterNonArray, ISeqLenLimit
+from lifestream.ptls.data_load import IterableChain, padded_collate_wo_target
+from lifestream.ptls.data_load.filter_dataset import FilterDataset
+from lifestream.ptls.data_load.iterable_processing import ToTorch, FilterNonArray, ISeqLenLimit
 
 
 def inference_data_loader(

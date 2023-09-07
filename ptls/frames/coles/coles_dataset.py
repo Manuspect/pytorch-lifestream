@@ -3,9 +3,9 @@ from operator import iadd
 
 import torch
 
-from ptls.data_load.feature_dict import FeatureDict
-from ptls.data_load.utils import collate_feature_dict
-from ptls.frames.coles.split_strategy import AbsSplit
+from lifestream.ptls.data_load.feature_dict import FeatureDict
+from lifestream.ptls.data_load.utils import collate_feature_dict
+from lifestream.ptls.frames.coles.split_strategy import AbsSplit
 
 
 class ColesDataset(FeatureDict, torch.utils.data.Dataset):

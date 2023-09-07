@@ -3,8 +3,8 @@ from typing import Iterable, List
 
 import torch
 
-from ptls.data_load import IterableChain
-from ptls.data_load.iterable_processing.to_torch_tensor import ToTorch
+from lifestream.ptls.data_load import IterableChain
+from lifestream.ptls.data_load.iterable_processing.to_torch_tensor import ToTorch
 
 logger = logging.getLogger(__name__)
 

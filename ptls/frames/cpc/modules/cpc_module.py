@@ -1,10 +1,10 @@
 import torch
 
-from ptls.frames.abs_module import ABSModule
-from ptls.frames.cpc.losses.cpc_loss import CPC_Loss
-from ptls.frames.cpc.metrics.cpc_accuracy import CpcAccuracy
-from ptls.nn.seq_encoder import RnnSeqEncoder
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.frames.abs_module import ABSModule
+from lifestream.ptls.frames.cpc.losses.cpc_loss import CPC_Loss
+from lifestream.ptls.frames.cpc.metrics.cpc_accuracy import CpcAccuracy
+from lifestream.ptls.nn.seq_encoder import RnnSeqEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 class CpcModule(ABSModule):

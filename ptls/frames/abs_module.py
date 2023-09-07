@@ -79,11 +79,11 @@ class ABSModule(pl.LightningModule):
 
     def configure_optimizers(self):
         optimizer = self._optimizer_partial(self.parameters())
-        scheduler = self._lr_scheduler_partial(optimizer)
+        # scheduler = self._lr_scheduler_partial(optimizer)
         
-        if isinstance(scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau):
-            scheduler = {
-                'scheduler': scheduler,
-                'monitor': self.metric_name,
-            }
-        return [optimizer], [scheduler]
+        # if isinstance(scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau):
+        #     scheduler = {
+        #         'scheduler': scheduler,
+        #         'monitor': self.metric_name,
+        #     }
+        return optimizer, #[scheduler]
