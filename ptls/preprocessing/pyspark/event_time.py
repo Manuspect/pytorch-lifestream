@@ -1,8 +1,8 @@
 import pyspark.sql
 from pyspark.sql import functions as F
 
-from ptls.preprocessing.base import ColTransformer
-from ptls.preprocessing.pyspark.col_transformer import ColTransformerPysparkMixin
+from lifestream.ptls.preprocessing.base import ColTransformer
+from lifestream.ptls.preprocessing.pyspark.col_transformer import ColTransformerPysparkMixin
 
 
 def dt_to_timestamp(col: str):

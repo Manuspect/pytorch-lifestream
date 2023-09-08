@@ -1,12 +1,12 @@
 import numpy as np
 import torch
-from ptls.data_load.feature_dict import FeatureDict
+from lifestream.ptls.data_load.feature_dict import FeatureDict
 
 
 class DropDay(FeatureDict):
     """
     This class is used as 'f_augmentation' argument for 
-    ptls.data_load.datasets.augmentation_dataset.AugmentationDataset (AugmentationIterableDataset).
+    lifestream.ptls.data_load.datasets.augmentation_dataset.AugmentationDataset (AugmentationIterableDataset).
     """
     def __init__(self, event_time_name='event_time'):
         self.event_time_name = event_time_name

@@ -7,9 +7,9 @@ import hydra
 import torchmetrics
 from pyhocon import ConfigFactory
 
-from ptls.frames.supervised import SequenceToTarget
-from ptls.loss import BCELoss
-from ptls.nn import PBLinear, RnnSeqEncoder, TransformerSeqEncoder, TrxEncoder
+from lifestream.ptls.frames.supervised import SequenceToTarget
+from lifestream.ptls.loss import BCELoss
+from lifestream.ptls.nn import PBLinear, RnnSeqEncoder, TransformerSeqEncoder, TrxEncoder
 from ptls_tests.test_data_load import RandomEventData
 
 

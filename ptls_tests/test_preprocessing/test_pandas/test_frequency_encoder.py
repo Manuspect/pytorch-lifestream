@@ -1,5 +1,5 @@
 import pandas as pd
-from ptls.preprocessing.pandas.frequency_encoder import FrequencyEncoder
+from lifestream.ptls.preprocessing.pandas.frequency_encoder import FrequencyEncoder
 
 
 def test_fit():

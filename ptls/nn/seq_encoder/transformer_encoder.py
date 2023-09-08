@@ -4,8 +4,8 @@ import math
 import torch
 from torch import nn
 
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
 
 logger = logging.getLogger(__name__)
 

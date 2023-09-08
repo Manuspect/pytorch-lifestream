@@ -1,7 +1,7 @@
 import torch
 
-from ptls.data_load import PaddedBatch
-from ptls.nn.trx_encoder.batch_norm import RBatchNorm, RBatchNormWithLens
+from lifestream.ptls.data_load import PaddedBatch
+from lifestream.ptls.nn.trx_encoder.batch_norm import RBatchNorm, RBatchNormWithLens
 
 
 def test_r_batch_norm():

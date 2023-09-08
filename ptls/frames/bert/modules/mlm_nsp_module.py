@@ -3,11 +3,11 @@ import torch
 from torch.nn import BCELoss
 from torchmetrics import MeanMetric
 
-from ptls.custom_layers import StatPooling
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.frames.bert.losses.query_soft_max import QuerySoftmaxLoss
-from ptls.nn import PBL2Norm
-from ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
+from lifestream.ptls.custom_layers import StatPooling
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.frames.bert.losses.query_soft_max import QuerySoftmaxLoss
+from lifestream.ptls.nn import PBL2Norm
+from lifestream.ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
 
 
 class SequencePredictionHead(torch.nn.Module):   

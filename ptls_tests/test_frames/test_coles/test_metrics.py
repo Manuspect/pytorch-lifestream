@@ -1,7 +1,7 @@
 import math
 import torch
 
-from ptls.frames.coles.metric import outer_cosine_similarity, outer_pairwise_distance, metric_recall_top_K, \
+from lifestream.ptls.frames.coles.metric import outer_cosine_similarity, outer_pairwise_distance, metric_recall_top_K, \
     BatchRecallTopK
 
 

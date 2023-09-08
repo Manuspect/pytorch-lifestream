@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from ptls.preprocessing.pandas.category_identity_encoder import CategoryIdentityEncoder
+from lifestream.ptls.preprocessing.pandas.category_identity_encoder import CategoryIdentityEncoder
 
 
 def test_fit():

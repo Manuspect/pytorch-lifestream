@@ -3,7 +3,7 @@ from itertools import combinations
 import numpy as np
 import torch
 
-from ptls.frames.coles.sampling_strategies.triplet_selector import TripletSelector
+from lifestream.ptls.frames.coles.sampling_strategies.triplet_selector import TripletSelector
 
 
 class AllTripletSelector(TripletSelector):

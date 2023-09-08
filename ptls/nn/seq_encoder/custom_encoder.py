@@ -2,8 +2,8 @@ import torch
 from torch.nn import MultiheadAttention
 from torch.nn.functional import relu, gelu
 
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
 
 
 class Encoder(AbsSeqEncoder):

@@ -5,11 +5,11 @@ import warnings
 from torchmetrics import MeanMetric
 from typing import Tuple, Dict, List, Union
 
-from ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
-from ptls.nn import PBL2Norm
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.custom_layers import StatPooling, GEGLU
-from ptls.nn.seq_step import LastStepEncoder
+from lifestream.ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
+from lifestream.ptls.nn import PBL2Norm
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.custom_layers import StatPooling, GEGLU
+from lifestream.ptls.nn.seq_step import LastStepEncoder
 
 class Head(nn.Module):   
     def __init__(self, input_size, n_classes, hidden_size=64, drop_p=0.1):

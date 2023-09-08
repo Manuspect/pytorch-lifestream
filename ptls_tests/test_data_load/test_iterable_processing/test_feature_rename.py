@@ -1,4 +1,4 @@
-from ptls.data_load.iterable_processing.feature_rename import FeatureRename
+from lifestream.ptls.data_load.iterable_processing.feature_rename import FeatureRename
 
 
 def test_feature_rename():

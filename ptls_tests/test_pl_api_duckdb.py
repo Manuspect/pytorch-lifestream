@@ -5,16 +5,16 @@ import pandas as pd
 import pytorch_lightning as pl
 import torch
 
-from ptls.data_load.datasets import DuckDbDataset
-from ptls.frames.coles.split_strategy import SampleSlices
-from ptls.frames.coles import CoLESModule, ColesIterableDataset
-from ptls.nn.seq_encoder import RnnSeqEncoder
-from ptls.nn.trx_encoder import TrxEncoder
-from ptls.data_load.datasets.dataloaders import inference_data_loader
-from ptls.frames.coles.sampling_strategies import HardNegativePairSelector
-from ptls.frames.coles.losses import ContrastiveLoss
-from ptls.data_load import padded_collate_wo_target
-from ptls.data_load.iterable_processing import FilterNonArray, ISeqLenLimit
+from lifestream.ptls.data_load.datasets import DuckDbDataset
+from lifestream.ptls.frames.coles.split_strategy import SampleSlices
+from lifestream.ptls.frames.coles import CoLESModule, ColesIterableDataset
+from lifestream.ptls.nn.seq_encoder import RnnSeqEncoder
+from lifestream.ptls.nn.trx_encoder import TrxEncoder
+from lifestream.ptls.data_load.datasets.dataloaders import inference_data_loader
+from lifestream.ptls.frames.coles.sampling_strategies import HardNegativePairSelector
+from lifestream.ptls.frames.coles.losses import ContrastiveLoss
+from lifestream.ptls.data_load import padded_collate_wo_target
+from lifestream.ptls.data_load.iterable_processing import FilterNonArray, ISeqLenLimit
 
 
 def test_train_inference():

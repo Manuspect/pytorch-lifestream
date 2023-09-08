@@ -1,7 +1,7 @@
 import torch
 
-from ptls.nn.seq_encoder.rnn_encoder import RnnEncoder
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder.rnn_encoder import RnnEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 def get_data():

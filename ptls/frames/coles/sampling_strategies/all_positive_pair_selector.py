@@ -1,6 +1,6 @@
 import torch
 
-from ptls.frames.coles.sampling_strategies.pair_selector import PairSelector
+from lifestream.ptls.frames.coles.sampling_strategies.pair_selector import PairSelector
 
 
 class AllPositivePairSelector(PairSelector):

@@ -1,6 +1,6 @@
 import torch
 
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 class RBatchNorm(torch.nn.Module):

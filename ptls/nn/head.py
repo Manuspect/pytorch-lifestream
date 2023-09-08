@@ -2,7 +2,7 @@ from typing import List
 
 import torch
 from torch.nn import Linear, BatchNorm1d, Sigmoid, Sequential, ReLU, LogSoftmax, Flatten, Softplus, Dropout
-from ptls.nn.normalization import L2NormEncoder
+from lifestream.ptls.nn.normalization import L2NormEncoder
 
 
 class Head(torch.nn.Module):

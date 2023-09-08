@@ -1,5 +1,5 @@
 import torch
-from ptls.frames.bert import MlmDataset
+from lifestream.ptls.frames.bert import MlmDataset
 
 
 class GptDataset(MlmDataset):

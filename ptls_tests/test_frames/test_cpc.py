@@ -2,12 +2,12 @@ import pytorch_lightning as pl
 import torch
 from pyhocon import ConfigFactory
 
-from ptls.data_load import TrxDataset
-from ptls.data_load import create_train_loader, create_validation_loader
-from ptls.frames.cpc import CpcModule
+from lifestream.ptls.data_load import TrxDataset
+from lifestream.ptls.data_load import create_train_loader, create_validation_loader
+from lifestream.ptls.frames.cpc import CpcModule
 from ptls_tests.utils.data_generation import gen_trx_data
-from ptls.nn import RnnSeqEncoder
-from ptls.nn import TrxEncoder
+from lifestream.ptls.nn import RnnSeqEncoder
+from lifestream.ptls.nn import TrxEncoder
 from functools import partial
 
 

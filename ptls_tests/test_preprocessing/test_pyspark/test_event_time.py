@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 
-from ptls.preprocessing.pyspark.event_time import dt_to_timestamp, timestamp_to_dt, DatetimeToTimestamp
+from lifestream.ptls.preprocessing.pyspark.event_time import dt_to_timestamp, timestamp_to_dt, DatetimeToTimestamp
 
 
 def test_dt_to_timestamp():

@@ -1,4 +1,4 @@
-from ptls.data_load.iterable_processing.target_extractor import TargetExtractor
+from lifestream.ptls.data_load.iterable_processing.target_extractor import TargetExtractor
 
 
 def get_features_only():

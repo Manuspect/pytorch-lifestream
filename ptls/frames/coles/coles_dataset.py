@@ -9,7 +9,7 @@ from lifestream.ptls.frames.coles.split_strategy import AbsSplit
 
 
 class ColesDataset(FeatureDict, torch.utils.data.Dataset):
-    """Dataset for ptls.frames.coles.CoLESModule
+    """Dataset for lifestream.ptls.frames.coles.CoLESModule
 
     Parameters
     ----------

@@ -2,9 +2,9 @@ import random
 import torch
 from transformers import GPT2Config, GPT2Model
 
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
-from ptls.nn.seq_step import LastStepEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
+from lifestream.ptls.nn.seq_step import LastStepEncoder
 
 class GptEncoder(AbsSeqEncoder):
     """Used huggingface implementation of GPT decoder

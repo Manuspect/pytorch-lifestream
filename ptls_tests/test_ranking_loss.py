@@ -1,6 +1,6 @@
 import torch
 
-from ptls.loss import PairwiseMarginRankingLoss
+from lifestream.ptls.loss import PairwiseMarginRankingLoss
 
 
 def test_best_loss():

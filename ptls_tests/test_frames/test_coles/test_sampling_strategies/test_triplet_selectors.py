@@ -1,6 +1,6 @@
 import torch
 
-from ptls.frames.coles.sampling_strategies import AllTripletSelector, RandomNegativeTripletSelector, \
+from lifestream.ptls.frames.coles.sampling_strategies import AllTripletSelector, RandomNegativeTripletSelector, \
     HardTripletSelector, SemiHardTripletSelector
 
 

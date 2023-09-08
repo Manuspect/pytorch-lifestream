@@ -1,6 +1,6 @@
 import torch
 
-from ptls.data_load.utils import collate_feature_dict
+from lifestream.ptls.data_load.utils import collate_feature_dict
 
 
 class SeqToTargetDataset(torch.utils.data.Dataset):

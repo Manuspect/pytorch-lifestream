@@ -1,6 +1,6 @@
 import pytest
 
-from ptls.data_load.list_splitter import ListSplitter
+from lifestream.ptls.data_load.list_splitter import ListSplitter
 
 
 def test_data_size_select_01():

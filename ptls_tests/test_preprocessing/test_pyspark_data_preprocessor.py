@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 from pathlib import Path
 
-from ptls.preprocessing import PysparkDataPreprocessor
+from lifestream.ptls.preprocessing import PysparkDataPreprocessor
 
 
 def test_pandas_data_preprocessor():

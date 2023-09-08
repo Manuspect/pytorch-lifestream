@@ -39,7 +39,7 @@ assert y.payload.size() == (4, 12, 10)
 | PBLinear    | torch.nn.Linear        |
 | PBLayerNorm | torch.nn.LayerNorm     |
 | PBReLU      | torch.nn.ReLU          |
-| PBL2Norm    | ptls.nn.L2NormEncoder  |
+| PBL2Norm    | lifestream.ptls.nn.L2NormEncoder  |
 
 ## Classes
 See docstrings for classes.

@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 
-from ptls.loss import DistributionTargetsLoss
+from lifestream.ptls.loss import DistributionTargetsLoss
 
 
 def test_best_loss():

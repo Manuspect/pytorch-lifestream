@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 
-from ptls.nn.normalization import L2NormEncoder
+from lifestream.ptls.nn.normalization import L2NormEncoder
 
 
 def test_norm_encoder():

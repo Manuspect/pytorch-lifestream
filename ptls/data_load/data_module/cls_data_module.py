@@ -9,12 +9,12 @@ from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
 from sklearn.model_selection import train_test_split
 
-from ptls.data_load import padded_collate, padded_collate_distribution_target, IterableChain, IterableAugmentations
-from ptls.data_load.augmentations.build_augmentations import build_augmentations
-from ptls.data_load.data_module.map_augmentation_dataset import MapAugmentationDataset
-from ptls.data_load.iterable_processing import FeatureFilter, FeatureTypeCast, IdFilter, IterableShuffle, SeqLenFilter, TargetJoin, TargetExtractor
-from ptls.data_load.datasets.parquet_dataset import ParquetFiles, ParquetDataset
-from ptls.data_load.utils import collate_target
+from lifestream.ptls.data_load import padded_collate, padded_collate_distribution_target, IterableChain, IterableAugmentations
+from lifestream.ptls.data_load.augmentations.build_augmentations import build_augmentations
+from lifestream.ptls.data_load.data_module.map_augmentation_dataset import MapAugmentationDataset
+from lifestream.ptls.data_load.iterable_processing import FeatureFilter, FeatureTypeCast, IdFilter, IterableShuffle, SeqLenFilter, TargetJoin, TargetExtractor
+from lifestream.ptls.data_load.datasets.parquet_dataset import ParquetFiles, ParquetDataset
+from lifestream.ptls.data_load.utils import collate_target
 
 logger = logging.getLogger(__name__)
 

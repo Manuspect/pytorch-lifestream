@@ -8,8 +8,8 @@ import torch.multiprocessing
 from omegaconf import DictConfig
 from torch.utils.data.dataloader import DataLoader
 
-from ptls.data_load.utils import collate_feature_dict
-from ptls.frames.inference_module import InferenceModule
+from lifestream.ptls.data_load.utils import collate_feature_dict
+from lifestream.ptls.frames.inference_module import InferenceModule
 
 logger = logging.getLogger(__name__)
 

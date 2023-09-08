@@ -6,13 +6,13 @@ import pytorch_lightning as pl
 import torch
 from sklearn.model_selection import train_test_split
 
-from ptls.data_load.datasets.dataloaders import inference_data_loader
-from ptls.frames.coles import CoLESModule
-from ptls.frames.coles import ColesDataset
-from ptls.frames.coles.split_strategy import SampleSlices
-from ptls.frames.supervised import SequenceToTarget
-from ptls.nn import TrxEncoder, RnnSeqEncoder
-from ptls.frames import PtlsDataModule
+from lifestream.ptls.data_load.datasets.dataloaders import inference_data_loader
+from lifestream.ptls.frames.coles import CoLESModule
+from lifestream.ptls.frames.coles import ColesDataset
+from lifestream.ptls.frames.coles.split_strategy import SampleSlices
+from lifestream.ptls.frames.supervised import SequenceToTarget
+from lifestream.ptls.nn import TrxEncoder, RnnSeqEncoder
+from lifestream.ptls.frames import PtlsDataModule
 
 
 def test_dataset_way():

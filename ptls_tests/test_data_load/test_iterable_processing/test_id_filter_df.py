@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from ptls.data_load.iterable_processing.id_filter_df import IdFilterDf
+from lifestream.ptls.data_load.iterable_processing.id_filter_df import IdFilterDf
 
 
 def test_df_filter_one_col():

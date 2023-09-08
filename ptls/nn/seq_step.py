@@ -2,7 +2,7 @@ import torch
 import numpy as np
 from torch import nn as nn
 
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 class TimeStepShuffle(nn.Module):
@@ -20,7 +20,7 @@ class TimeStepShuffle(nn.Module):
 
 class LastStepEncoder(nn.Module):
     """
-    Class is used by ptls.nn.RnnSeqEncoder for reducing RNN output with shape (B, L, H), where
+    Class is used by lifestream.ptls.nn.RnnSeqEncoder for reducing RNN output with shape (B, L, H), where
         B - batch size
         L - sequence length
         H - hidden RNN size
@@ -35,7 +35,7 @@ class LastStepEncoder(nn.Module):
 
 class FirstStepEncoder(nn.Module):
     """
-    Class is used by ptls.nn.RnnSeqEncoder class for reducing RNN output with shape (B, L, H)
+    Class is used by lifestream.ptls.nn.RnnSeqEncoder class for reducing RNN output with shape (B, L, H)
     to embeddings tensor with shape (B, H). The first hidden state is used for embedding.
     
     where:
@@ -52,7 +52,7 @@ class FirstStepEncoder(nn.Module):
 
 class LastMaxAvgEncoder(nn.Module):
     """
-    Class is used by ptls.nn.RnnSeqEncoder class for reducing RNN output with shape (B, L, H)
+    Class is used by lifestream.ptls.nn.RnnSeqEncoder class for reducing RNN output with shape (B, L, H)
     to embeddings tensor with shape (B, 3 * H). Embeddings are created by concatenating:
         - last hidden state from RNN output,
         - max pool over all hidden states of RNN output,

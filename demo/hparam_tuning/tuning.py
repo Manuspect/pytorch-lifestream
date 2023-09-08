@@ -36,13 +36,13 @@ from sklearn.model_selection import train_test_split
 from torchmetrics import AUROC
 
 from data_preprocessing import get_file_name_train, get_file_name_test
-from ptls.data_load import iterable_processing
-from ptls.data_load.datasets import ParquetDataset
-from ptls.data_load.datasets import PersistDataset, parquet_file_scan
-from ptls.frames import PtlsDataModule
-from ptls.frames.supervised import SequenceToTarget, SeqToTargetDataset
-from ptls.loss import BCELoss
-from ptls.nn import RnnSeqEncoder, TrxEncoder
+from lifestream.ptls.data_load import iterable_processing
+from lifestream.ptls.data_load.datasets import ParquetDataset
+from lifestream.ptls.data_load.datasets import PersistDataset, parquet_file_scan
+from lifestream.ptls.frames import PtlsDataModule
+from lifestream.ptls.frames.supervised import SequenceToTarget, SeqToTargetDataset
+from lifestream.ptls.loss import BCELoss
+from lifestream.ptls.nn import RnnSeqEncoder, TrxEncoder
 
 logger = logging.getLogger(__name__)
 

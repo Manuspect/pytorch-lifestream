@@ -1,6 +1,6 @@
 import torch
 
-from ptls.data_load import PaddedBatch
+from lifestream.ptls.data_load import PaddedBatch
 
 
 class PBFeatureExtract(torch.nn.Module):

@@ -1,7 +1,7 @@
 import pandas as pd
 
-from ptls.preprocessing.base.col_category_transformer import ColCategoryTransformer
-from ptls.preprocessing.pandas.col_transformer import ColTransformerPandasMixin
+from lifestream.ptls.preprocessing.base.col_category_transformer import ColCategoryTransformer
+from lifestream.ptls.preprocessing.pandas.col_transformer import ColTransformerPandasMixin
 
 
 class FrequencyEncoder(ColTransformerPandasMixin, ColCategoryTransformer):

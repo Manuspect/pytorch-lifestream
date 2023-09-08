@@ -2,7 +2,7 @@ import warnings
 from typing import Dict
 
 import torch as torch
-from ptls.nn.trx_encoder.trx_encoder import TrxEncoder
+from lifestream.ptls.nn.trx_encoder.trx_encoder import TrxEncoder
 
 
 class TrxEncoderOhe(TrxEncoder):

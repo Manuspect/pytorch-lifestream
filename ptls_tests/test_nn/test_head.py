@@ -3,7 +3,7 @@
 
 import torch
 
-from ptls.nn import Head
+from lifestream.ptls.nn import Head
 
 
 def test_empty_layer():

@@ -2,7 +2,7 @@ import torch
 import numpy as np
 
 from omegaconf import OmegaConf
-from ptls.custom_layers import DropoutEncoder, Squeeze, CatLayer, MLP, TabularRowEncoder, CombinedTargetHeadFromRnn
+from lifestream.ptls.custom_layers import DropoutEncoder, Squeeze, CatLayer, MLP, TabularRowEncoder, CombinedTargetHeadFromRnn
 
 
 class TrxEncoderTest(torch.nn.Module):

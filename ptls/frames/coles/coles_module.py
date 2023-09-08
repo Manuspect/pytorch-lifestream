@@ -1,9 +1,9 @@
-from ptls.frames.abs_module import ABSModule
-from ptls.frames.coles.losses import ContrastiveLoss
-from ptls.frames.coles.metric import BatchRecallTopK
-from ptls.frames.coles.sampling_strategies import HardNegativePairSelector
-from ptls.nn.head import Head
-from ptls.nn.seq_encoder.containers import SeqEncoderContainer
+from lifestream.ptls.frames.abs_module import ABSModule
+from lifestream.ptls.frames.coles.losses import ContrastiveLoss
+from lifestream.ptls.frames.coles.metric import BatchRecallTopK
+from lifestream.ptls.frames.coles.sampling_strategies import HardNegativePairSelector
+from lifestream.ptls.nn.head import Head
+from lifestream.ptls.nn.seq_encoder.containers import SeqEncoderContainer
 
 
 class CoLESModule(ABSModule):

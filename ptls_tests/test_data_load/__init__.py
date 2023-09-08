@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 import pytorch_lightning as pl
-from ptls.data_load import create_train_loader, create_validation_loader, TrxDataset
+from lifestream.ptls.data_load import create_train_loader, create_validation_loader, TrxDataset
 from ptls_tests.utils.data_generation import gen_trx_data
 
 

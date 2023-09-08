@@ -1,6 +1,6 @@
 import torch
 
-from ptls.loss import ZILNLoss
+from lifestream.ptls.loss import ZILNLoss
 
 
 def test_ziln_loss():

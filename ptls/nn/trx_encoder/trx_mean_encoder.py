@@ -3,8 +3,8 @@ from collections import OrderedDict
 import torch
 from torch import nn as nn
 
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.trx_encoder.scalers import scaler_by_name
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.trx_encoder.scalers import scaler_by_name
 
 
 class TrxMeanEncoder(nn.Module):

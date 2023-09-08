@@ -1,4 +1,4 @@
-from ptls.data_load.iterable_processing.iterable_shuffle import IterableShuffle
+from lifestream.ptls.data_load.iterable_processing.iterable_shuffle import IterableShuffle
 import numpy as np
 
 

@@ -5,12 +5,12 @@ import pandas as pd
 from sklearn.metrics import roc_auc_score
 import numpy as np
 
-from ptls.data_load import PaddedBatch
-from ptls.data_load.utils import collate_feature_dict
-from ptls.frames.inference_module import InferenceModule
+from lifestream.ptls.data_load import PaddedBatch
+from lifestream.ptls.data_load.utils import collate_feature_dict
+from lifestream.ptls.frames.inference_module import InferenceModule
 import pytorch_lightning as pl
 
-from ptls.nn import PBFeatureExtract
+from lifestream.ptls.nn import PBFeatureExtract
 from ptls_tests.utils.data_generation import gen_trx_data
 
 
@@ -18,9 +18,9 @@ def get_rnn_seq_encoder():
     conf = OmegaConf.create("""
 _target_: torch.nn.Sequential
 _args_:
-  - _target_: ptls.nn.RnnSeqEncoder
+  - _target_: lifestream.ptls.nn.RnnSeqEncoder
     trx_encoder:
-      _target_: ptls.nn.TrxEncoder
+      _target_: lifestream.ptls.nn.TrxEncoder
       embeddings:
         mcc_code:
           in: 21
@@ -31,7 +31,7 @@ _args_:
       numeric_values: 
         amount: log
     hidden_size: 16
-  - _target_: ptls.nn.Head
+  - _target_: lifestream.ptls.nn.Head
     input_size: 16
     objective: classification
     num_classes: 1

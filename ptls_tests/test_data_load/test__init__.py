@@ -1,8 +1,8 @@
 import torch
 from torch.utils.data import DataLoader
 
-from ptls.data_load import padded_collate, ZeroDownSampler, DropoutTrxDataset, TrxDataset, LastKTrxDataset
-from ptls.data_load import augmentation_chain
+from lifestream.ptls.data_load import padded_collate, ZeroDownSampler, DropoutTrxDataset, TrxDataset, LastKTrxDataset
+from lifestream.ptls.data_load import augmentation_chain
 from ptls_tests.utils.data_generation import gen_trx_data
 
 

@@ -6,16 +6,16 @@ import torch
 from torch.utils.data import DataLoader
 from typing import List, Dict
 
-from ptls.data_load import IterableChain
-from ptls.data_load.augmentations.build_augmentations import build_augmentations
-from ptls.data_load.data_module.coles_data_module import coles_collate_fn
-from ptls.data_load.datasets import MemoryMapDataset
-from ptls.data_load.iterable_processing.feature_filter import FeatureFilter
-from ptls.data_load.iterable_processing.filter_non_array import FilterNonArray
-from ptls.data_load.iterable_processing.seq_len_filter import SeqLenFilter
-from ptls.data_load.iterable_processing.to_torch_tensor import ToTorch
-from ptls.frames.coles import split_strategy
-from ptls.metric_learn.dataset.splitting_dataset import MapSplittingDataset
+from lifestream.ptls.data_load import IterableChain
+from lifestream.ptls.data_load.augmentations.build_augmentations import build_augmentations
+from lifestream.ptls.data_load.data_module.coles_data_module import coles_collate_fn
+from lifestream.ptls.data_load.datasets import MemoryMapDataset
+from lifestream.ptls.data_load.iterable_processing.feature_filter import FeatureFilter
+from lifestream.ptls.data_load.iterable_processing.filter_non_array import FilterNonArray
+from lifestream.ptls.data_load.iterable_processing.seq_len_filter import SeqLenFilter
+from lifestream.ptls.data_load.iterable_processing.to_torch_tensor import ToTorch
+from lifestream.ptls.frames.coles import split_strategy
+from lifestream.ptls.metric_learn.dataset.splitting_dataset import MapSplittingDataset
 
 logger = logging.getLogger(__name__)
 

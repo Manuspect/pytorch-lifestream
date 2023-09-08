@@ -1,4 +1,4 @@
-from ptls.data_load.datasets.parquet_file_scan import train_valid_split
+from lifestream.ptls.data_load.datasets.parquet_file_scan import train_valid_split
 
 
 def test_train_valid_split_none():

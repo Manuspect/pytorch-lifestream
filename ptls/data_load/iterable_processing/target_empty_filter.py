@@ -1,6 +1,6 @@
 import numpy as np
 
-from ptls.data_load.iterable_processing_dataset import IterableProcessingDataset
+from lifestream.ptls.data_load.iterable_processing_dataset import IterableProcessingDataset
 
 
 class TargetEmptyFilter(IterableProcessingDataset):

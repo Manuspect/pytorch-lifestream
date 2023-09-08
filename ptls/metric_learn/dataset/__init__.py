@@ -7,11 +7,11 @@ import operator
 
 from torch.utils.data import DataLoader
 
-from ptls.data_load import padded_collate, ConvertingTrxDataset, DropoutTrxDataset, ProcessDataset
-from ptls.metric_learn.dataset.splitting_dataset import SplittingDataset, SeveralSplittingsDataset
-from ptls.frames.coles import split_strategy
-from ptls.metric_learn.dataset.target_enumerator_dataset import TargetEnumeratorDataset
-from ptls.metric_learn.dataset.complex_target_dataset import ComplexTargetDataset
+from lifestream.ptls.data_load import padded_collate, ConvertingTrxDataset, DropoutTrxDataset, ProcessDataset
+from lifestream.ptls.metric_learn.dataset.splitting_dataset import SplittingDataset, SeveralSplittingsDataset
+from lifestream.ptls.frames.coles import split_strategy
+from lifestream.ptls.metric_learn.dataset.target_enumerator_dataset import TargetEnumeratorDataset
+from lifestream.ptls.metric_learn.dataset.complex_target_dataset import ComplexTargetDataset
 
 
 def nested_list_to_flat_with_collate(collate_fn):

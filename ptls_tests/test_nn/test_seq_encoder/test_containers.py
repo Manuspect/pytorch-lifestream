@@ -1,9 +1,9 @@
 import torch
 from omegaconf import OmegaConf
 
-from ptls.nn.trx_encoder import TrxEncoder
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.seq_encoder import RnnSeqEncoder, TransformerSeqEncoder
+from lifestream.ptls.nn.trx_encoder import TrxEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder import RnnSeqEncoder, TransformerSeqEncoder
 from hydra.utils import instantiate
 
 
@@ -41,9 +41,9 @@ def test_rnn_shape():
 def test_rnn_hydra_init():
     params = """
 seq_encoder: 
-    _target_: ptls.nn.RnnSeqEncoder
+    _target_: lifestream.ptls.nn.RnnSeqEncoder
     trx_encoder:
-        _target_: ptls.nn.TrxEncoder
+        _target_: lifestream.ptls.nn.TrxEncoder
         embeddings:
             mcc_code:
                 in: 200
@@ -87,9 +87,9 @@ def test_transformer_shape():
 def test_transformer_hydra_init():
     params = """
 seq_encoder: 
-    _target_: ptls.nn.TransformerSeqEncoder
+    _target_: lifestream.ptls.nn.TransformerSeqEncoder
     trx_encoder:
-        _target_: ptls.nn.TrxEncoder
+        _target_: lifestream.ptls.nn.TrxEncoder
         embeddings:
             mcc_code:
                 in: 200
@@ -115,12 +115,12 @@ seq_encoder:
 def test_transformer_hydra_init_with_sequential():
     params = """
 seq_encoder: 
-    _target_: ptls.nn.TransformerSeqEncoder
+    _target_: lifestream.ptls.nn.TransformerSeqEncoder
     trx_encoder:
         _target_: torch.nn.Sequential
         _args_:
         -
-            _target_: ptls.nn.TrxEncoder
+            _target_: lifestream.ptls.nn.TrxEncoder
             embeddings:
                 mcc_code:
                     in: 200
@@ -131,7 +131,7 @@ seq_encoder:
             numeric_values:
                 amount: identity
         -
-            _target_: ptls.nn.PBLinear
+            _target_: lifestream.ptls.nn.PBLinear
             in_features: 73
             out_features: 24
     input_size: 24

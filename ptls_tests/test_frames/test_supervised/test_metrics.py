@@ -1,6 +1,6 @@
 import torch
-from ptls.frames.supervised.metrics import BucketAccuracy, JSDiv, UnivMeanError, LogAccuracy, RankAUC
-from ptls.loss import ZILNLoss
+from lifestream.ptls.frames.supervised.metrics import BucketAccuracy, JSDiv, UnivMeanError, LogAccuracy, RankAUC
+from lifestream.ptls.loss import ZILNLoss
 
 
 def test_bucket_accuracy():

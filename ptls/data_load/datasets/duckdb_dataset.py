@@ -4,7 +4,7 @@ import warnings
 import duckdb
 import torch
 
-from ptls.data_load import IterableChain
+from lifestream.ptls.data_load import IterableChain
 
 
 class DuckDbDataset(torch.utils.data.IterableDataset):

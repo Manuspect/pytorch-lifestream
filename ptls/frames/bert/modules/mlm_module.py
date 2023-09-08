@@ -2,10 +2,10 @@ import pytorch_lightning as pl
 import torch
 from torchmetrics import MeanMetric
 
-from ptls.frames.bert.losses.query_soft_max import QuerySoftmaxLoss
-from ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
-from ptls.nn import PBL2Norm
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.frames.bert.losses.query_soft_max import QuerySoftmaxLoss
+from lifestream.ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
+from lifestream.ptls.nn import PBL2Norm
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 class MLMPretrainModule(pl.LightningModule):

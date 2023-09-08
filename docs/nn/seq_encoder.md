@@ -89,7 +89,7 @@ config = """
         _target_: torch.nn.Sequential
         _args_:
         - 
-            _target_: ptls.nn.TrxEncoder
+            _target_: lifestream.ptls.nn.TrxEncoder
             embeddings:
                 mcc_code:
                     in: 10
@@ -100,7 +100,7 @@ config = """
             numeric_values:
                 amount: identity
         -
-            _target_: ptls.nn.RnnEncoder
+            _target_: lifestream.ptls.nn.RnnEncoder
             input_size: 9  # depends on TrxEncoder output
             hidden_size: 24
 """
@@ -111,9 +111,9 @@ SeqEncoder-style:
 ```python
 config = """
     model:
-        _target_: ptls.nn.RnnSeqEncoder
+        _target_: lifestream.ptls.nn.RnnSeqEncoder
         trx_encoder:
-            _target_: ptls.nn.TrxEncoder
+            _target_: lifestream.ptls.nn.TrxEncoder
             embeddings:
                 mcc_code:
                     in: 10

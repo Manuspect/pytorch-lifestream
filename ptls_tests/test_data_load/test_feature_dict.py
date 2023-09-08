@@ -4,7 +4,7 @@ import numpy as np
 import pytest
 import torch
 
-from ptls.data_load.feature_dict import FeatureDict
+from lifestream.ptls.data_load.feature_dict import FeatureDict
 
 # FeatureDict.is_seq_feature
 def test_is_seq_feature_int():

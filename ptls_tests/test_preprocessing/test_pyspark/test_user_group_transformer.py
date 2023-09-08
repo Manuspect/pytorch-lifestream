@@ -1,7 +1,7 @@
 import numpy as np
 from pyspark.sql import SparkSession
 
-from ptls.preprocessing.pyspark.user_group_transformer import UserGroupTransformer
+from lifestream.ptls.preprocessing.pyspark.user_group_transformer import UserGroupTransformer
 
 
 def test_group():

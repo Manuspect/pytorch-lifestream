@@ -9,8 +9,8 @@ from sklearn.model_selection import train_test_split
 import random
 import glob
 
-from ptls.data_load import padded_collate_emb_valid
-from ptls.data_load.datasets.parquet_dataset import ParquetFiles, ParquetDataset
+from lifestream.ptls.data_load import padded_collate_emb_valid
+from lifestream.ptls.data_load.datasets.parquet_dataset import ParquetFiles, ParquetDataset
 
 
 logger = logging.getLogger(__name__)

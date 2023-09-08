@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 
-from ptls.preprocessing.pyspark.frequency_encoder import FrequencyEncoder
+from lifestream.ptls.preprocessing.pyspark.frequency_encoder import FrequencyEncoder
 
 
 def test_fit():

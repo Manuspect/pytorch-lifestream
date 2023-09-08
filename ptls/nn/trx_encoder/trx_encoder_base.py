@@ -1,9 +1,9 @@
 from typing import Dict, Union
 
 import torch
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.trx_encoder.encoders import BaseEncoder
-from ptls.nn.trx_encoder.scalers import IdentityScaler, scaler_by_name
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.trx_encoder.encoders import BaseEncoder
+from lifestream.ptls.nn.trx_encoder.scalers import IdentityScaler, scaler_by_name
 from torch import nn as nn
 
 

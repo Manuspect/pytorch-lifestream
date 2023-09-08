@@ -3,7 +3,7 @@ from typing import Dict
 import numpy as np
 import torch
 
-from ptls.data_load.feature_dict import FeatureDict
+from lifestream.ptls.data_load.feature_dict import FeatureDict
 
 
 class PaddedBatch:
@@ -73,6 +73,8 @@ class PaddedBatch:
 
     def to(self, device, non_blocking=False):
         length = self._length.to(device=device, non_blocking=non_blocking)
+        # print("to", type(self._payload))
+        # print("to", len(self._payload))
         payload = {
             k: v.to(device=device, non_blocking=non_blocking) if type(v) is torch.Tensor else v
             for k, v in self._payload.items()
@@ -93,7 +95,7 @@ class PaddedBatch:
     @staticmethod
     def is_seq_feature(k: str, x):
         """Check is value sequential feature
-        Synchronized with ptls.data_load.feature_dict.FeatureDict.is_seq_feature
+        Synchronized with lifestream.ptls.data_load.feature_dict.FeatureDict.is_seq_feature
 
                      1-d        2-d
         event_time | True      True

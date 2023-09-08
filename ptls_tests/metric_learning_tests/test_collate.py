@@ -1,6 +1,6 @@
 import torch
 
-from ptls.metric_learn.dataset import collate_splitted_rows
+from lifestream.ptls.metric_learn.dataset import collate_splitted_rows
 
 
 def test_collate_splitted_row2():

@@ -1,4 +1,4 @@
-from ptls.data_load import augmentation_chain
+from lifestream.ptls.data_load import augmentation_chain
 
 
 def build_augmentations(conf):

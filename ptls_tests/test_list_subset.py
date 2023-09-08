@@ -1,4 +1,4 @@
-from ptls.util import ListSubset
+from lifestream.ptls.util import ListSubset
 
 
 def test_list_subset_iter():

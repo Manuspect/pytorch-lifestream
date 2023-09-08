@@ -1,13 +1,13 @@
 import warnings
 
 import pytorch_lightning as pl
-from ptls.data_load.iterable_processing.seq_len_filter import SeqLenFilter
-from ptls.data_load.iterable_processing.feature_filter import FeatureFilter
-from ptls.data_load.iterable_processing.target_move import TargetMove
-from ptls.data_load.iterable_processing.to_torch_tensor import ToTorch
-from ptls.data_load import IterableChain
+from lifestream.ptls.data_load.iterable_processing.seq_len_filter import SeqLenFilter
+from lifestream.ptls.data_load.iterable_processing.feature_filter import FeatureFilter
+from lifestream.ptls.data_load.iterable_processing.target_move import TargetMove
+from lifestream.ptls.data_load.iterable_processing.to_torch_tensor import ToTorch
+from lifestream.ptls.data_load import IterableChain
 from torch.utils.data import DataLoader
-from ptls.data_load import padded_collate
+from lifestream.ptls.data_load import padded_collate
 from typing import List, Dict
 from sklearn.model_selection import train_test_split
 

@@ -6,7 +6,7 @@ import torch.nn.functional as F
 import torchmetrics
 from torch.special import entr
 
-from ptls.loss import cross_entropy, kl, mape_metric, mse_loss, r_squared
+from lifestream.ptls.loss import cross_entropy, kl, mape_metric, mse_loss, r_squared
 
 logger = logging.getLogger(__name__)
 

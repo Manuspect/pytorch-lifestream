@@ -1,6 +1,6 @@
 import torch
 
-from ptls.data_load.augmentations.all_time_shuffle import AllTimeShuffle
+from lifestream.ptls.data_load.augmentations.all_time_shuffle import AllTimeShuffle
 
 
 def test_shuffle():

@@ -1,10 +1,10 @@
 import warnings
 
 import torch
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.trx_encoder.batch_norm import RBatchNorm, RBatchNormWithLens
-from ptls.nn.trx_encoder.noisy_embedding import NoisyEmbedding
-from ptls.nn.trx_encoder.trx_encoder_base import TrxEncoderBase
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.trx_encoder.batch_norm import RBatchNorm, RBatchNormWithLens
+from lifestream.ptls.nn.trx_encoder.noisy_embedding import NoisyEmbedding
+from lifestream.ptls.nn.trx_encoder.trx_encoder_base import TrxEncoderBase
 
 
 class TrxEncoder(TrxEncoderBase):

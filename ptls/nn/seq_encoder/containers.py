@@ -1,9 +1,9 @@
 import torch
 
-from ptls.nn.seq_encoder.rnn_encoder import RnnEncoder
-from ptls.nn.seq_encoder.transformer_encoder import TransformerEncoder
-from ptls.nn.seq_encoder.longformer_encoder import LongformerEncoder
-from ptls.nn.seq_encoder.custom_encoder import Encoder
+from lifestream.ptls.nn.seq_encoder.rnn_encoder import RnnEncoder
+from lifestream.ptls.nn.seq_encoder.transformer_encoder import TransformerEncoder
+from lifestream.ptls.nn.seq_encoder.longformer_encoder import LongformerEncoder
+from lifestream.ptls.nn.seq_encoder.custom_encoder import Encoder
 
 class SeqEncoderContainer(torch.nn.Module):
     """Base container class for Sequence encoder.

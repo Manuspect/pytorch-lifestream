@@ -1,8 +1,8 @@
 import torch
 import torchmetrics
 
-from ptls.loss import BCELoss
-from ptls.frames.abs_module import ABSModule
+from lifestream.ptls.loss import BCELoss
+from lifestream.ptls.frames.abs_module import ABSModule
 
 
 class SentencePairsHead(torch.nn.Module):

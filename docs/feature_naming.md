@@ -83,8 +83,8 @@ x = [{
     'distribution': torch.tensor([0.1, 0.0, 0.9]),
 } for _ in range(10)]
 
-from ptls.data_load.datasets import MemoryMapDataset
-from ptls.data_load.iterable_processing import FeatureRename
+from lifestream.ptls.data_load.datasets import MemoryMapDataset
+from lifestream.ptls.data_load.iterable_processing import FeatureRename
 dataset = MemoryMapDataset(
     data=x,
     i_filters=[FeatureRename({'distribution': 'target_distribution', 'bin': 'target_bin'})]

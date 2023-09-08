@@ -4,7 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import pytorch_lightning as pl
 
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 class DropoutEncoder(nn.Module):
     def __init__(self, p):

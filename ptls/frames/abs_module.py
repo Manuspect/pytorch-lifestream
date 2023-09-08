@@ -1,6 +1,6 @@
 import torch
 import pytorch_lightning as pl
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 class ABSModule(pl.LightningModule):

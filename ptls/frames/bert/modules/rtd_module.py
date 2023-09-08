@@ -1,10 +1,10 @@
 import torch
 import torchmetrics
 
-from ptls.loss import BCELoss
-from ptls.custom_layers import Squeeze
-from ptls.frames.abs_module import ABSModule
-from ptls.nn.seq_encoder.utils import AllStepsHead, FlattenHead
+from lifestream.ptls.loss import BCELoss
+from lifestream.ptls.custom_layers import Squeeze
+from lifestream.ptls.frames.abs_module import ABSModule
+from lifestream.ptls.nn.seq_encoder.utils import AllStepsHead, FlattenHead
 
 
 class RtdModule(ABSModule):

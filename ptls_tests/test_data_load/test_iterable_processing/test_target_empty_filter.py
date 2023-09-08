@@ -1,6 +1,6 @@
 import numpy as np
 
-from ptls.data_load.iterable_processing.target_empty_filter import TargetEmptyFilter
+from lifestream.ptls.data_load.iterable_processing.target_empty_filter import TargetEmptyFilter
 
 
 def get_data():

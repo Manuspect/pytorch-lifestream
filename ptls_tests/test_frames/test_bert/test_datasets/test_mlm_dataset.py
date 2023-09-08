@@ -1,6 +1,6 @@
 import torch
 
-from ptls.frames.bert.datasets.mlm_indexed_dataset import MlmIndexedDataset
+from lifestream.ptls.frames.bert.datasets.mlm_indexed_dataset import MlmIndexedDataset
 
 
 def get_data():

@@ -1,5 +1,5 @@
 import torch
-from ptls.frames.supervised.seq_to_target_dataset import SeqToTargetDataset
+from lifestream.ptls.frames.supervised.seq_to_target_dataset import SeqToTargetDataset
 
 
 def test_seq_to_target_dataset_default_long():

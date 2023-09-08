@@ -4,7 +4,7 @@ import logging
 import torch
 from torch import nn as nn
 
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 logger = logging.getLogger(__name__)
 

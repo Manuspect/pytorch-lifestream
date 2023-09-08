@@ -4,8 +4,8 @@ import pyspark
 import pyspark.sql.functions as F
 from pyspark.sql import Window
 
-from ptls.preprocessing.base import ColTransformer
-from ptls.preprocessing.pandas.col_transformer import ColTransformerPandasMixin
+from lifestream.ptls.preprocessing.base import ColTransformer
+from lifestream.ptls.preprocessing.pandas.col_transformer import ColTransformerPandasMixin
 
 
 class UserGroupTransformer(ColTransformerPandasMixin, ColTransformer):

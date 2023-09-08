@@ -1,9 +1,9 @@
 import torch
 from omegaconf import OmegaConf
-from ptls.frames.bert.modules.mlm_module import MLMPretrainModule
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
-from ptls.nn import RnnEncoder, TransformerEncoder, LongformerEncoder
+from lifestream.ptls.frames.bert.modules.mlm_module import MLMPretrainModule
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
+from lifestream.ptls.nn import RnnEncoder, TransformerEncoder, LongformerEncoder
 
 
 def get_config():

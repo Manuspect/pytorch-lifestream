@@ -2,10 +2,10 @@ from copy import deepcopy
 
 import torch
 
-from ptls.data_load.augmentations.random_slice import RandomSlice
-from ptls.data_load.utils import collate_feature_dict
-from ptls.data_load.feature_dict import FeatureDict
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.augmentations.random_slice import RandomSlice
+from lifestream.ptls.data_load.utils import collate_feature_dict
+from lifestream.ptls.data_load.feature_dict import FeatureDict
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 class RtdDataset(torch.utils.data.Dataset):

@@ -1,5 +1,5 @@
-from ptls.data_load.iterable_processing_dataset import IterableProcessingDataset
-from ptls.data_load.augmentations.seq_len_limit import SeqLenLimit
+from lifestream.ptls.data_load.iterable_processing_dataset import IterableProcessingDataset
+from lifestream.ptls.data_load.augmentations.seq_len_limit import SeqLenLimit
 
 
 class ISeqLenLimit(IterableProcessingDataset):

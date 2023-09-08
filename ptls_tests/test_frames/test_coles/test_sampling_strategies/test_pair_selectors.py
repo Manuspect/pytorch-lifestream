@@ -1,6 +1,6 @@
 import torch
 
-from ptls.frames.coles.sampling_strategies import AllPositivePairSelector, HardNegativePairSelector, \
+from lifestream.ptls.frames.coles.sampling_strategies import AllPositivePairSelector, HardNegativePairSelector, \
     DistanceWeightedPairSelector
 
 

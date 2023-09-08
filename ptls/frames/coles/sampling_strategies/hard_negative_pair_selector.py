@@ -1,7 +1,7 @@
 import torch
 
-from ptls.frames.coles.sampling_strategies.pair_selector import PairSelector
-from ptls.frames.coles.metric import outer_pairwise_distance
+from lifestream.ptls.frames.coles.sampling_strategies.pair_selector import PairSelector
+from lifestream.ptls.frames.coles.metric import outer_pairwise_distance
 
 
 class HardNegativePairSelector(PairSelector):

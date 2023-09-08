@@ -25,8 +25,8 @@ import torch
 from collections import defaultdict
 from torch.utils.data import DataLoader
 
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.data_load.data_module.coles_data_module import ColesDataModuleTrain
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.data_module.coles_data_module import ColesDataModuleTrain
 
 import torch.multiprocessing
 torch.multiprocessing.set_sharing_strategy('file_system')

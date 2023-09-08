@@ -1,4 +1,4 @@
-from ptls.preprocessing.base import ColTransformer
+from lifestream.ptls.preprocessing.base import ColTransformer
 
 
 class ColCategoryTransformer(ColTransformer):

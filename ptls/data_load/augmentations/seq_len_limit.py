@@ -1,12 +1,12 @@
 import numpy as np
 import torch
-from ptls.data_load.feature_dict import FeatureDict
+from lifestream.ptls.data_load.feature_dict import FeatureDict
 
 
 class SeqLenLimit(FeatureDict):
     """
     This class is used as 'f_augmentation' argument for 
-    ptls.data_load.datasets.augmentation_dataset.AugmentationDataset (AugmentationIterableDataset).
+    lifestream.ptls.data_load.datasets.augmentation_dataset.AugmentationDataset (AugmentationIterableDataset).
     """
     def __init__(self, max_seq_len, strategy='tail'):
         self.max_seq_len = max_seq_len

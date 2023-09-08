@@ -4,9 +4,9 @@ from operator import iadd
 
 import torch
 
-from ptls.data_load.augmentations.sequence_pair_augmentation import sequence_pair_augmentation
-from ptls.data_load.utils import collate_feature_dict
-from ptls.frames.coles import ColesDataset
+from lifestream.ptls.data_load.augmentations.sequence_pair_augmentation import sequence_pair_augmentation
+from lifestream.ptls.data_load.utils import collate_feature_dict
+from lifestream.ptls.frames.coles import ColesDataset
 
 
 class NspDataset(ColesDataset):

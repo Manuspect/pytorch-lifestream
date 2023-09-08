@@ -2,8 +2,8 @@ import pickle
 
 import torch
 
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.trx_encoder import TrxEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.trx_encoder import TrxEncoder
 
 
 def test_example():

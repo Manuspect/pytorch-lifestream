@@ -1,7 +1,7 @@
 import pyspark.sql.functions as F
 
-from ptls.preprocessing.base import ColTransformer
-from ptls.preprocessing.pyspark.col_transformer import ColTransformerPysparkMixin
+from lifestream.ptls.preprocessing.base import ColTransformer
+from lifestream.ptls.preprocessing.pyspark.col_transformer import ColTransformerPysparkMixin
 
 
 class ColIdentityEncoder(ColTransformerPysparkMixin, ColTransformer):

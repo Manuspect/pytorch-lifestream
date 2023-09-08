@@ -1,5 +1,5 @@
 import pandas as pd
-from ptls.preprocessing.pandas.col_identity_transformer import ColIdentityEncoder
+from lifestream.ptls.preprocessing.pandas.col_identity_transformer import ColIdentityEncoder
 
 
 def test_identity():

@@ -2,7 +2,7 @@ import numpy as np
 import pytest
 import torch
 
-from ptls.data_load.utils import collate_feature_dict
+from lifestream.ptls.data_load.utils import collate_feature_dict
 
 
 def test_collate_feature_dict():

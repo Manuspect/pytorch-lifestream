@@ -1,5 +1,5 @@
 from torch.utils.data.dataset import IterableDataset
-from ptls.data_load.feature_dict import FeatureDict
+from lifestream.ptls.data_load.feature_dict import FeatureDict
 
 
 class IterableProcessingDataset(FeatureDict, IterableDataset):

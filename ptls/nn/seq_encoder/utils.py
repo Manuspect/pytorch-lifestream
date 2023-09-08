@@ -4,10 +4,10 @@ import torch
 from torch import nn as nn
 from torch.nn import functional as tf
 
-from ptls.custom_layers import Squeeze
-from ptls.nn.seq_step import LastStepEncoder
-from ptls.nn.normalization import L2NormEncoder
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.custom_layers import Squeeze
+from lifestream.ptls.nn.seq_step import LastStepEncoder
+from lifestream.ptls.nn.normalization import L2NormEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 class PerTransHead(nn.Module):

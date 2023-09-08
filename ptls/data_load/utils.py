@@ -3,8 +3,8 @@ import torch
 from collections import defaultdict
 from functools import reduce
 
-from ptls.data_load.feature_dict import FeatureDict
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.feature_dict import FeatureDict
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 from transformers.tokenization_utils_base import BatchEncoding
 
@@ -52,7 +52,9 @@ def collate_feature_dict(batch):
                 new_x[k] = torch.from_numpy(v).bool()
             else:
                 new_x[k] = v
-    return PaddedBatch(new_x, lengths)
+    temp = PaddedBatch(new_x, lengths)
+    # print("temp", type(temp._payload), temp._payload.keys())
+    return temp
 
 
 def collate_target(x, num=1):

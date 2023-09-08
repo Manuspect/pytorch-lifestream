@@ -1,5 +1,5 @@
 import torch
-from ptls.data_load import AugmentationChain
+from lifestream.ptls.data_load import AugmentationChain
 
 
 class AugmentationDataset(torch.utils.data.Dataset):

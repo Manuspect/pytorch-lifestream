@@ -3,7 +3,7 @@ from collections import OrderedDict
 import numpy as np
 import torch
 
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 class AggFeatureSeqEncoder(torch.nn.Module):

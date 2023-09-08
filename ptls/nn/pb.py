@@ -1,8 +1,8 @@
 from functools import WRAPPER_ASSIGNMENTS
 import torch
 
-from ptls.nn.normalization import L2NormEncoder
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.normalization import L2NormEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 def _pb_shell(cls):

@@ -1,7 +1,7 @@
 import pandas as pd
 
-from ptls.preprocessing.base import ColTransformer
-from ptls.preprocessing.pandas.col_transformer import ColTransformerPandasMixin
+from lifestream.ptls.preprocessing.base import ColTransformer
+from lifestream.ptls.preprocessing.pandas.col_transformer import ColTransformerPandasMixin
 
 
 def dt_to_timestamp(x: pd.Series):

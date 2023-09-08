@@ -1,7 +1,7 @@
 import pytest
 from pyspark.sql import SparkSession
 
-from ptls.preprocessing.pyspark.category_identity_encoder import CategoryIdentityEncoder
+from lifestream.ptls.preprocessing.pyspark.category_identity_encoder import CategoryIdentityEncoder
 
 
 def test_fit():

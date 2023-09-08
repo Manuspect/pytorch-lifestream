@@ -13,9 +13,9 @@ import torch
 from torch.utils.data import WeightedRandomSampler, Sampler, Dataset
 from torch.utils.data.dataloader import DataLoader
 
-from ptls.data_load.augmentations.all_time_shuffle import AllTimeShuffle
-from ptls.data_load.iterable_processing_dataset import IterableProcessingDataset
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.augmentations.all_time_shuffle import AllTimeShuffle
+from lifestream.ptls.data_load.iterable_processing_dataset import IterableProcessingDataset
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 logger = logging.getLogger(__name__)
 
@@ -452,7 +452,7 @@ def create_train_loader(dataset, params):
 
 
 class MapStyleDatasetWrapper(torch.utils.data.Dataset):
-    """Deprecated. Use ptls.data_load.datasets.memory_dataset.MemoryMapDataset
+    """Deprecated. Use lifestream.ptls.data_load.datasets.memory_dataset.MemoryMapDataset
     """
     def __init__(self, data):
         self.data = data
@@ -465,7 +465,7 @@ class MapStyleDatasetWrapper(torch.utils.data.Dataset):
 
 
 class IterableDatasetWrapper(torch.utils.data.IterableDataset):
-    """Deprecated. Use ptls.data_load.datasets.memory_dataset.MemoryIterableDataset
+    """Deprecated. Use lifestream.ptls.data_load.datasets.memory_dataset.MemoryIterableDataset
     """
     def __init__(self, data):
         warnings.warn('Multiply data in multiprocessing mode', UserWarning)

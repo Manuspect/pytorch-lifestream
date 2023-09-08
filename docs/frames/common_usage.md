@@ -60,8 +60,8 @@ If data is iterable like `ptls.data_load.parquet_dataset.ParquetDataset`
 we can't use `map` style until we read it to `list`.
 
 ```python
-from ptls.frames.coles import ColesDataset
-from ptls.frames.coles.split_strategy import SampleSlices
+from lifestream.ptls.frames.coles import ColesDataset
+from lifestream.ptls.frames.coles.split_strategy import SampleSlices
 
 splitter=SampleSlices(split_count=5, cnt_min=10, cnt_max=20)
 train_dataset = ColesDataset(data=train_data, splitter=splitter)
@@ -91,7 +91,7 @@ valid_dataloader = torch.utils.data.DataLoader(
 
 With datamodule:
 ```python
-from ptls.frames import PtlsDataModule
+from lifestream.ptls.frames import PtlsDataModule
 
 datamodule = PtlsDataModule(
     train_data=train_dataset,
@@ -110,8 +110,8 @@ and create `CoLESModule` that will train `seq_cncoder`.
 ```python
 import torch.optim
 from functools import partial
-from ptls.nn import TrxEncoder, RnnSeqEncoder
-from ptls.frames.coles import CoLESModule
+from lifestream.ptls.nn import TrxEncoder, RnnSeqEncoder
+from lifestream.ptls.frames.coles import CoLESModule
 
 seq_encoder = RnnSeqEncoder(
     trx_encoder=TrxEncoder(
@@ -176,8 +176,8 @@ It can run inference with only `seq_encoder`.
 import torch
 import pytorch_lightning as pl
 
-from ptls.frames.supervised import SequenceToTarget
-from ptls.data_load.datasets.dataloaders import inference_data_loader
+from lifestream.ptls.frames.supervised import SequenceToTarget
+from lifestream.ptls.data_load.datasets.dataloaders import inference_data_loader
 
 inference_dataloader = inference_data_loader(dataset, num_workers=4, batch_size=256)
 model = SequenceToTarget(seq_encoder)

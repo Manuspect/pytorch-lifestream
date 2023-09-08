@@ -2,7 +2,7 @@ import numpy as np
 import pytest
 import torch
 
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 def get_pb():

@@ -74,7 +74,7 @@ This is dataframe with 200 unique users with 20 transaction in each. Random date
 Let's use a preprocessor
 
 ```python
-from ptls.preprocessing import PandasDataPreprocessor
+from lifestream.ptls.preprocessing import PandasDataPreprocessor
 
 preprocessor = PandasDataPreprocessor(
     col_id='user_id',

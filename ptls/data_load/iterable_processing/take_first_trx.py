@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 
-from ptls.data_load import IterableProcessingDataset
+from lifestream.ptls.data_load import IterableProcessingDataset
 
 
 class TakeFirstTrx(IterableProcessingDataset):

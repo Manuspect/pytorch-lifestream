@@ -3,8 +3,8 @@ import warnings
 import pyspark
 import pyspark.sql.functions as F
 
-from ptls.preprocessing.base.col_category_transformer import ColCategoryTransformer
-from ptls.preprocessing.pyspark.col_transformer import ColTransformerPysparkMixin
+from lifestream.ptls.preprocessing.base.col_category_transformer import ColCategoryTransformer
+from lifestream.ptls.preprocessing.pyspark.col_transformer import ColTransformerPysparkMixin
 
 
 class CategoryIdentityEncoder(ColTransformerPysparkMixin, ColCategoryTransformer):

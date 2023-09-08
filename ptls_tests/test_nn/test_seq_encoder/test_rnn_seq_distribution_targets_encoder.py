@@ -2,9 +2,9 @@ import torch
 import numpy as np
 from omegaconf import OmegaConf
 
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.seq_encoder.rnn_seq_encoder_distribution_target import RnnSeqEncoderDistributionTarget
-from ptls.nn.trx_encoder import TrxEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder.rnn_seq_encoder_distribution_target import RnnSeqEncoderDistributionTarget
+from lifestream.ptls.nn.trx_encoder import TrxEncoder
 
 
 def get_data():

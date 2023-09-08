@@ -1,5 +1,5 @@
-from ptls.data_load import padded_collate, TrxDataset
-from ptls.nn.trx_encoder.trx_mean_encoder import TrxMeanEncoder
+from lifestream.ptls.data_load import padded_collate, TrxDataset
+from lifestream.ptls.nn.trx_encoder.trx_mean_encoder import TrxMeanEncoder
 from ptls_tests.utils.data_generation import gen_trx_data
 
 

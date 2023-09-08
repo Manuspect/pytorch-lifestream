@@ -7,7 +7,7 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 
-from ptls.data_load import read_pyarrow_file
+from lifestream.ptls.data_load import read_pyarrow_file
 
 from pydoc import locate
 

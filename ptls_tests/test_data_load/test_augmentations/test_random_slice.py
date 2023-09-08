@@ -1,6 +1,6 @@
 import numpy as np
 
-from ptls.data_load.augmentations.random_slice import RandomSlice
+from lifestream.ptls.data_load.augmentations.random_slice import RandomSlice
 
 
 def test_usage():

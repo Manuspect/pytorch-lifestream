@@ -1,8 +1,8 @@
 import torch
 from torch.nn import functional as F
 
-from ptls.frames.coles.sampling_strategies.triplet_selector import TripletSelector
-from ptls.frames.coles.metric import outer_pairwise_distance
+from lifestream.ptls.frames.coles.sampling_strategies.triplet_selector import TripletSelector
+from lifestream.ptls.frames.coles.metric import outer_pairwise_distance
 
 
 class SemiHardTripletSelector(TripletSelector):

@@ -1,9 +1,9 @@
 import pytest
 import torch
 
-from ptls.data_load import PaddedBatch
-from ptls.nn.trx_encoder.scalers import IdentityScaler
-from ptls.nn.trx_encoder.trx_encoder_base import TrxEncoderBase
+from lifestream.ptls.data_load import PaddedBatch
+from lifestream.ptls.nn.trx_encoder.scalers import IdentityScaler
+from lifestream.ptls.nn.trx_encoder.trx_encoder_base import TrxEncoderBase
 
 
 def test_get_category_indexes_clip():

@@ -55,7 +55,7 @@ class InferenceSpark(object):
         def inference_func(data_feature, data_length):
 
             import torch
-            from ptls.data_load.padded_batch import PaddedBatch
+            from lifestream.ptls.data_load.padded_batch import PaddedBatch
             import subprocess
 
             if torch.cuda.is_available():

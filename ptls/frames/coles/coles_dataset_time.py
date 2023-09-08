@@ -4,14 +4,14 @@ import numpy as np
 
 import torch
 
-from ptls.data_load.feature_dict import FeatureDict
-from ptls.data_load.utils import collate_feature_dict
-from ptls.frames.coles.split_strategy import AbsSplit
+from lifestream.ptls.data_load.feature_dict import FeatureDict
+from lifestream.ptls.data_load.utils import collate_feature_dict
+from lifestream.ptls.frames.coles.split_strategy import AbsSplit
 
 
 
 class ColesDatasetTime(FeatureDict, torch.utils.data.Dataset):
-    """Dataset for ptls.frames.coles.CoLESModule
+    """Dataset for lifestream.ptls.frames.coles.CoLESModule
     Parameters
     ----------
     data:

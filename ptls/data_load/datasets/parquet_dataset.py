@@ -9,8 +9,8 @@ import numpy as np
 import torch
 from omegaconf import ListConfig
 
-from ptls.data_load import read_pyarrow_file
-from ptls.data_load import IterableChain
+from lifestream.ptls.data_load import read_pyarrow_file
+from lifestream.ptls.data_load import IterableChain
 
 logger = logging.getLogger(__name__)
 

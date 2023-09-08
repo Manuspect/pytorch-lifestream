@@ -1,9 +1,9 @@
 import torch
 
-from ptls.nn.seq_encoder.rnn_encoder import RnnEncoder
-from ptls.nn.seq_encoder.utils import PerTransHead, scoring_head
-from ptls.nn.trx_encoder import TrxEncoder
-from ptls.nn.trx_encoder.trx_mean_encoder import TrxMeanEncoder
+from lifestream.ptls.nn.seq_encoder.rnn_encoder import RnnEncoder
+from lifestream.ptls.nn.seq_encoder.utils import PerTransHead, scoring_head
+from lifestream.ptls.nn.trx_encoder import TrxEncoder
+from lifestream.ptls.nn.trx_encoder.trx_mean_encoder import TrxMeanEncoder
 
 
 def trx_avg_model(params):

@@ -1,4 +1,4 @@
-from ptls.data_load.datasets import DuckDbDataset
+from lifestream.ptls.data_load.datasets import DuckDbDataset
 import pandas as pd
 import torch
 

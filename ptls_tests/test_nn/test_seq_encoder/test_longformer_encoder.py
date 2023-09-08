@@ -1,7 +1,7 @@
 import torch
 
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.seq_encoder import LongformerEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder import LongformerEncoder
 
 
 def test_transformer_encoder_example():

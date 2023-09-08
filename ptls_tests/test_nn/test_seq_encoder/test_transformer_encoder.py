@@ -1,8 +1,8 @@
 import torch
 
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.seq_encoder import TransformerEncoder
-from ptls.nn.seq_encoder.transformer_encoder import PositionalEncoding
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder import TransformerEncoder
+from lifestream.ptls.nn.seq_encoder.transformer_encoder import PositionalEncoding
 
 
 def test_positional_encoding_shape():

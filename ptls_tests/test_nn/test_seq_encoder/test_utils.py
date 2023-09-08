@@ -2,9 +2,9 @@ import pytest
 import torch
 from omegaconf import OmegaConf
 
-from ptls.nn.seq_encoder.rnn_encoder import RnnEncoder
-from ptls.nn.seq_encoder.utils import PerTransHead, scoring_head
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder.rnn_encoder import RnnEncoder
+from lifestream.ptls.nn.seq_encoder.utils import PerTransHead, scoring_head
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 class TrxEncoderTest(torch.nn.Module):

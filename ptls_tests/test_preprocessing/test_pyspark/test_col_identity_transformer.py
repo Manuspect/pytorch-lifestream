@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 
-from ptls.preprocessing.pyspark.col_identity_transformer import ColIdentityEncoder
+from lifestream.ptls.preprocessing.pyspark.col_identity_transformer import ColIdentityEncoder
 
 
 def test_identity():

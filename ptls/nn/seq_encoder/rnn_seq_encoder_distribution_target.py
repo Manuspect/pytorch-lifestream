@@ -1,6 +1,6 @@
 import numpy as np
 
-from ptls.nn.seq_encoder import RnnSeqEncoder
+from lifestream.ptls.nn.seq_encoder import RnnSeqEncoder
 
 
 class RnnSeqEncoderDistributionTarget(RnnSeqEncoder):

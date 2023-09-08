@@ -32,7 +32,7 @@ Python's `list` have the same interface as `torch.Dataset`, so you can just prov
 
 ```python
 import torch
-from ptls.data_load.utils import collate_feature_dict
+from lifestream.ptls.data_load.utils import collate_feature_dict
 
 data_list = [
     {
@@ -98,7 +98,7 @@ Multiprocessing split implementation:
 These filter implemented in generator-style. Call filter object to get generator with modified records.
 
 ```python
-from ptls.data_load.iterable_processing import SeqLenFilter
+from lifestream.ptls.data_load.iterable_processing import SeqLenFilter
 
 i_filter = SeqLenFilter(min_seq_len=4)
 for rec in i_filter(data_list):
@@ -120,7 +120,7 @@ They are in `ptls.data_load.augmentations`.
 
 Example:
 ```python
-from ptls.data_load.augmentations import RandomSlice
+from lifestream.ptls.data_load.augmentations import RandomSlice
 
 f_augmentation = RandomSlice(min_len=4, max_len=10)
 for rec in data_list:
@@ -203,9 +203,9 @@ Less memory used. Infinite dataset is possible.
 Example:
 ```python
 import torch
-from ptls.data_load.datasets import MemoryMapDataset
-from ptls.data_load.utils import collate_feature_dict
-from ptls.data_load.iterable_processing import SeqLenFilter, FeatureRename
+from lifestream.ptls.data_load.datasets import MemoryMapDataset
+from lifestream.ptls.data_load.utils import collate_feature_dict
+from lifestream.ptls.data_load.iterable_processing import SeqLenFilter, FeatureRename
 
 
 data_list = [
@@ -277,8 +277,8 @@ Persisted iterator have `len` and can be randomly accessed by index.
 Class `ptls.data_load.datasets.AugmentationDataset` is a way to apply augmentations.
 Example:
 ```python
-from ptls.data_load.datasets import AugmentationDataset, PersistDataset, ParquetDataset
-from ptls.data_load.augmentations import AllTimeShuffle, DropoutTrx
+from lifestream.ptls.data_load.datasets import AugmentationDataset, PersistDataset, ParquetDataset
+from lifestream.ptls.data_load.augmentations import AllTimeShuffle, DropoutTrx
 
 train_data = AugmentationDataset(
     f_augmentations=[

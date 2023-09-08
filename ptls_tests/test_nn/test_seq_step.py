@@ -1,8 +1,8 @@
 import torch
 
-from ptls.nn import TimeStepShuffle
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.seq_step import SkipStepEncoder
+from lifestream.ptls.nn import TimeStepShuffle
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_step import SkipStepEncoder
 
 
 def test_timestep_shuffle():

@@ -1,7 +1,7 @@
 import torch
 from numpy.testing import assert_almost_equal
 
-from ptls.frames.coles.metric import outer_cosine_similarity
+from lifestream.ptls.frames.coles.metric import outer_cosine_similarity
 
 
 class HistogramLoss(torch.nn.Module):

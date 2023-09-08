@@ -2,9 +2,9 @@ import torch
 import warnings
 from torch import nn as nn
 
-from ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
-from ptls.nn.seq_step import LastStepEncoder, LastMaxAvgEncoder, FirstStepEncoder
-from ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
+from lifestream.ptls.nn.seq_step import LastStepEncoder, LastMaxAvgEncoder, FirstStepEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
 
 
 # TODO: split it on GRU Rnn Encoder and LSTM Rnn Encoder

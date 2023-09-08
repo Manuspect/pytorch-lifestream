@@ -5,10 +5,10 @@ import warnings
 from torchmetrics import MeanMetric
 from typing import Tuple, Dict
 
-from ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
-from ptls.nn import PBL2Norm
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.custom_layers import StatPooling
+from lifestream.ptls.nn.seq_encoder.abs_seq_encoder import AbsSeqEncoder
+from lifestream.ptls.nn import PBL2Norm
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.custom_layers import StatPooling
 
 
 class TabformerPretrainModule(pl.LightningModule):

@@ -1,7 +1,7 @@
 import torch
 
-from ptls.data_load.padded_batch import PaddedBatch
-from ptls.nn.seq_encoder.statistics_encoder import StatisticsEncoder
+from lifestream.ptls.data_load.padded_batch import PaddedBatch
+from lifestream.ptls.nn.seq_encoder.statistics_encoder import StatisticsEncoder
 
 
 def get_data():

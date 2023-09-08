@@ -1,12 +1,12 @@
 import pytorch_lightning as pl
 import torch.optim
 
-from ptls.frames.coles import CoLESModule
+from lifestream.ptls.frames.coles import CoLESModule
 from ptls_tests.test_data_load import RandomEventData
 from pyhocon import ConfigFactory
-from ptls.nn.seq_encoder import RnnSeqEncoder
-from ptls.nn import Head
-from ptls.nn import TrxEncoder
+from lifestream.ptls.nn.seq_encoder import RnnSeqEncoder
+from lifestream.ptls.nn import Head
+from lifestream.ptls.nn import TrxEncoder
 from functools import partial
 
 

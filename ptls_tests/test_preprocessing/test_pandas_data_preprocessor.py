@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-from ptls.preprocessing import PandasDataPreprocessor
+from lifestream.ptls.preprocessing import PandasDataPreprocessor
 
 
 def test_pandas_data_preprocessor():

@@ -16,7 +16,7 @@ class FeatureDict:
     @staticmethod
     def is_seq_feature(k: str, x):
         """Check is value sequential feature
-        Synchronized with ptls.data_load.padded_batch.PaddedBatch.is_seq_feature
+        Synchronized with lifestream.ptls.data_load.padded_batch.PaddedBatch.is_seq_feature
 
         Iterables are:
             np.array
