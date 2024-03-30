@@ -21,10 +21,10 @@ setuptools.setup(
     ],
     python_requires='>=3.7',
     install_requires=[
-        'pytorch-lightning==1.6.*',
-        'torch==1.12.*',
-        'numpy==1.23.*',
-        'torchmetrics==0.9.*',
+        'pytorch-lightning>=2',
+        'torch>=2',
+        'numpy',
+        'torchmetrics',
         'omegaconf',
     ],
 )
