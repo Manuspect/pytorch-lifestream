@@ -47,6 +47,8 @@ class ABSModule(pl.LightningModule):
 
         self._optimizer_partial = optimizer_partial
         self._lr_scheduler_partial = lr_scheduler_partial
+        self.validation_step_outputs = []
+
 
     @property
     def seq_encoder(self):
@@ -71,11 +73,16 @@ class ABSModule(pl.LightningModule):
 
     def validation_step(self, batch, _):
         y_h, y = self.shared_step(*batch)
-        self._validation_metric(y_h, y)
+        loss = self._validation_metric(y_h, y)
+        self.validation_step_outputs.append(loss)
 
     def on_validation_epoch_end(self, outputs):
         self.log(f'valid/{self.metric_name}', self._validation_metric.compute(), prog_bar=True)
         self._validation_metric.reset()
+
+        epoch_average = torch.stack(self.validation_step_outputs).mean()
+        self.log("validation_epoch_average", epoch_average)
+        self.validation_step_outputs.clear()
 
     def configure_optimizers(self):
         optimizer = self._optimizer_partial(self.parameters())
